@@ -1,0 +1,14 @@
+function solve(numOne, numTwo) {
+    let factorialOne = 1
+    let factorialTwo = 1
+
+    for (let i = 1; i <= numOne; i++) {
+        factorialOne *= i
+    }
+    for (let i = 1; i <= numTwo; i++) {
+        //console.log(i)
+        factorialTwo = factorialTwo*i
+    }
+    //console.log(factorialTwo)
+   console.log((factorialOne/factorialTwo).toFixed(2))
+}
