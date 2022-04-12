@@ -1,0 +1,13 @@
+function solve(numOne, numTwo, numThree) {
+    let maxNum = Number.MAX_SAFE_INTEGER;
+    if (numOne < maxNum) {
+        maxNum = numOne
+    }
+    if (numTwo < maxNum) {
+        maxNum = numTwo
+    }
+    if (numThree < maxNum) {
+        maxNum = numThree
+    }
+    console.log(maxNum)
+}
