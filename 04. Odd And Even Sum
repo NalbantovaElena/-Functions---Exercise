@@ -1,0 +1,15 @@
+function solve(number) {
+    let str = number.toString()
+    let sumOdd = 0;
+    let sumEven = 0
+    //console.log(str)
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] % 2 === 0) {
+            sumEven += Number(str[i])
+           
+        } else {
+             sumOdd += Number(str[i])
+        }
+    }
+    console.log(`Odd sum = ${sumOdd}, Even sum = ${sumEven}`)
+}
