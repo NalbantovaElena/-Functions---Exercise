@@ -1,0 +1,18 @@
+function solve(firstSymbol, secondSymbol) {
+    let result = []
+    firstSymbol = firstSymbol.charCodeAt(0)
+    //console.log(firstSymbol)
+    secondSymbol = secondSymbol.charCodeAt(0)
+    //console.log(secondSymbol)
+    if (firstSymbol > secondSymbol) {
+        for (let i = secondSymbol + 1; i < firstSymbol; i++) {
+            result.push(String.fromCharCode(i))
+        }
+    }
+    for (let i = firstSymbol + 1; i < secondSymbol; i++) {
+        result.push(String.fromCharCode(i))
+    }
+
+
+console.log(result.join(' '))
+}
