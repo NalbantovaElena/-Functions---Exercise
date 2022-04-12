@@ -1,0 +1,22 @@
+function solve(num) {
+    // let arr = []
+    // for (let i = 0; i < num; i++) {
+    //     arr[i] = num
+    //     for (let j = 0; j < num; j++) {
+    //         arr[j] = num
+    //     }
+    //     console.log(arr.join(' '))
+    // }
+
+
+    for (let i = 0; i < num; i++) {
+        let str = ''
+        str += ` ${num}`;
+        for (let j = 0; j < num - 1; j++) {
+            str += ` ${num}`
+
+        }
+        console.log(str)
+    }
+
+}
