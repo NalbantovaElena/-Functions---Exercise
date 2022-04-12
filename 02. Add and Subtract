@@ -1,0 +1,13 @@
+function solve(numOne, numTwo, numThree) {
+
+    function sum(a, b) {
+        return a + b;
+    }
+
+    function substract(a) {
+        let sumNum = sum(numOne, numTwo)
+        let result =  sumNum - a
+        console.log(result)
+    }
+    substract(numThree)
+}
